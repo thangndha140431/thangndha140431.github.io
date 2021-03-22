@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+  body,
+  h1,
+  h2 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  p {
+    line-height: 2
+  }
+
+  .bgimg,
+  .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bgimg {
+    background-image: url("image/background/img1.jpg")
+  }
+
+  .bgimg2 {
+    background-image: url("image/background/img3.jpg")
+  }
+
+  .site-footer {
+    background-color: #3c3f4d;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+
+  s .site-footer .social-icons {
+    text-align: right
+  }
+
+  .site-footer .social-icons a {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+  }
+
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+  }
+
+  .social-icons a {
+    background-color: #eceeef;
+    color: #ffffff;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+  }
+
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+  }
+
+  .social-icons a.facebook {
+    background-color: #3b5998
+  }
+
+  .social-icons a.google {
+    background-color: #b42727
+  }
+
+  .social-icons a.youtube {
+    background-color: #fd0404
+  }
+
+  .social-icons a.skype {
+    background-color: #00ccff
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+</style>
+
+<body>
+
+  <!-- Header / Home
+  <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h1 class="w3-jumbo"><b>Chill Hood</b></h1>
+      <h2>Are you ready?</h2>
+      <h2>19.30 pm - 16.08.2021</h2>
+      <h3>k17fptuniversity@gmail.com</h3>
+    </div>
+  </header>-->
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/carousel/img1.jpg">
+        
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carousel/img2.jpg">
+        
+      </div>
+
+      <div class="carousel-item">
+        <img src="image/carousel/img3.jpg">
+        
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- Navbar (sticky bottom) -->
+  <div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+      <a href="#demo" style="width:20%" class="w3-bar-item w3-button">Home</a>
+      <a href="#event" style="width:20%" class="w3-bar-item w3-button">Event</a>
+      <a href="#food" style="width:20%" class="w3-bar-item w3-button">Food and Beverage</a>
+      <a href="#registration" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Registration</a>
+      <a href="gallery.html" style="width:20%" class="w3-bar-item w3-button w3-hover-black">Gallery</a>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-64 w3-pale-red " id="us">
+    <div class="w3-content">
+      <h1 class="w3-center w3-text-grey"><b>Welcome K17 FPT University</b></h1>
+      <img src="image/background/img2.jpg" style="width:100%;margin:32px 0">
+      <p><i>Dear K17 students!
+
+          Sunday came to school and the students decided to hold a small party to welcome the new members, so we hope
+          you take a moment to join. This will be a very special party as everyone will participate in its execution.
+          Bring whatever is available. If you do not know what to bring, you can bring a drink or fruit. This will be
+          a warm gathering among our classmates, so there's no need to stress over the food. The party will be held at
+          7:30 pm next Sunday, and it would be great if you had some time to join. For more information about the
+          party, please contact Hotline: 19008198 or email k17fptuniversity@gmail.com. I hope you will have time for
+          this event as it could be an opportunity for all of us to gather and have fun.
+
+          Think about this and make a decision as soon as possible.
+
+          We look forward to hearing from you soon.</i>
+      </p><br>
+      <p class="w3-center"><a href="#event" class="w3-button w3-black w3-round w3-padding-large w3-large">Event
+          Details</a></p>
+    </div>
+  </div>
+  <div id="video">
+    <br>
+    <h1 style="text-align: center;">F Camp 2021 Trailer</h1>
+    <hr class="w-100">
+
+    <video width="100%" controls>
+        <source src="video/videofcamp.mp4" type="video/mp4">
+    </video>
+  </div>
+  <br>
+  <br>
+  <!-- Background photo -->
+  <div class="w3-display-container bgimg2">
+    <div class="w3-display-middle w3-text-blue w3-center"><br><br><br>
+      <h1 class="w3-jumbo">You Are Invited</h1><br>
+      
+    </div>
+  </div>
+
+  <!-- Wedding information -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="event">
+    <div class="w3-content">
+      <h1 class="w3-text-grey"><b>EVENT</b></h1>
+      <img src="image/background/img4.jpg" style="width:100%;margin:64px 0">
+      <div class="w3-row">
+        <div class="w3-half">
+          <h2>When</h2>
+          <p>Event - 12:35am </p>
+          <p>Reception & Dinner - 8:00pm</p>
+        </div>
+        <div class="w3-half">
+          <h2>Where</h2>
+          <p>Alpha FPT University</p>
+          <p>Canteen FPT University</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Food-->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px;">
+    <h1 class="w3-center w3-text-grey"><b>Food and Beverage</b></h1>
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding w3-padding-16  w3-center" id="food">
+      <br><br>
+      <div class="w3-quarter">
+        <img src="image/food/sandwich.jpg" alt="Sandwich" style="width:100%">
+        <h3>Sandwich, A Real NYC Classic</h3>
+        
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/steak.jpg" alt="Steak" style="width:100%">
+        <h3>T-bone US Steak</h3>
+        
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/cherries.jpg" alt="Cherries" style="width:100%">
+        <h3>Cherries</h3>
+        
+        
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/wine.jpg" alt="Pasta and Wine" style="width:100%">
+        <h3>Robust Wine and Vegetable Pasta</h3>
+        
+      </div>
+    </div>
+    
+    <!-- Second Photo Grid-->
+    <div id="food" class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+        <img src="image/food/popsicle.jpg" alt="Popsicle" style="width:100%">
+        <h3>Popsicle</h3>
+      
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/salmon.jpg" alt="Salmon" style="width:100%">
+        <h3>Garlic Butter Baked Salmon</h3>
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/sandwich.jpg" alt="Sandwich" style="width:100%">
+        <h3>Sandwich Recipes</h3>
+      </div>
+      <div class="w3-quarter">
+        <img src="image/food/croissant.jpg" alt="Croissant" style="width:100%">
+        <h3>Le French</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- RSVP section -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="registration">
+    <h1>HOPE YOU CAN JOIN WITH US!</h1>
+    <p class="w3-large">Welcome K17 FPT University</p>
+    <p class="w3-xlarge">
+      <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Join</button>
+    </p>
+  </div>
+  
+  <!-- RSVP modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <h1 class="w3-wide">CAN YOU COME?</h1>
+        <p>We really hope you can come to us!</p>
+        <form>
+          <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+        </form>
+        <p><i>Fresher’s Party</i></p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <button onclick="document.getElementById('id01').style.display='none'" type="button"
+              class="w3-button w3-block w3-green">Going</button>
+          </div>
+          <div class="w3-half">
+            <button onclick="document.getElementById('id01').style.display='none'" type="button"
+              class="w3-button w3-block w3-red">Can't come</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div style="text-align: center;">
+      <ul class="social-icons">
+        <li><a class="facebook" href="https://facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="google" href="https://google.com/"><i class="fa fa-google"></i></a></li>
+        <li><a class="youtube" href="https://youtube.com/"><i class="fa fa-youtube"></i></a></li>
+        <li><a class="skype" href="https://skype.com/"><i class="fa fa-skype"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
